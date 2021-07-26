@@ -10,7 +10,7 @@
   <body>
     <header>
       <div>
-        <h1>Titre 1</h1>
+        <h1><span>&#8497;</span>Titre 1</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias error
           labore dolorem a quam aspernatur molestias dolores cumque et quaerat.
@@ -27,8 +27,8 @@
       </div>
 
       <div>
-        <h3>html</h3>
-        <video src=""></video>
+        <h3>html video</h3>
+        <video src="./video1.mp4" height="250px" autoplay loop muted></video>
       </div>
 
       <div>
@@ -45,12 +45,59 @@
 
       <div>
         <h5>les tableaux</h5>
-        <table>
+        <table border="1" width="50%">
           <caption>
             Populations d'Europe
           </caption>
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>80M</td>
+            </tr>
+          </tbody>
         </table>
       </div>
+
+      <div>
+        <h6><span>&#8497;</span>Les liens</h6>
+        <a href="http://htmlcheatsheet.com" target="_blank">html cheat sheet</a
+        ><br />
+        <a
+          href="http://www.toptal.com/designers/htmlarrows/symbols"
+          target="_blank"
+          >icones html</a
+        >
+      </div>
+    </section>
+    <br />
+
+    <section>
+      <h2>Contact form</h2>
+      <form action="./action.php" method="POST">
+        <label for="name">Nom: </label>
+        <input type="text" placeholder="entrer votre nom" id="name" />
+        <label for="fname">Nom de famille: </label>
+        <input type="text" placeholder="entrer votre nom" id="fname" />
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          min="0"
+          max="99"
+          step="1"
+          value="18"
+        /><br />
+      </form>
     </section>
   </body>
 </html>
